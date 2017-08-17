@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-style: normal;
+  font-weight: 400; }
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll; }
+
+.app {
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+  .app .wrapers {
+    width: 100%;
+    height: 100%;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    background: url("/Public/img/singer51.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .app .wrapers .nav {
+      width: 100%;
+      height: 0.88rem; }
+
+.nav {
+  width: 100%;
+  height: 0.88rem; }
+  .nav .nav-wraps {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+    .nav .nav-wraps li {
+      width: 33.33%;
+      height: 100%;
+      display: flex; }
+    .nav .nav-wraps .icon {
+      width: 1.15rem;
+      height: 0.48rem;
+      background: url("/Public/img/nanjing.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-self: center; }
+    .nav .nav-wraps .gs {
+      text-align: center;
+      flex: 1;
+      align-self: center;
+      color: #fff;
+      font-size: .34rem;
+      font-weight: 400; }
+    .nav .nav-wraps .yd {
+      justify-content: flex-end;
+      align-self: center;
+      height: 0.25rem;
+      font-size: .24rem;
+      border: 1px solid #fff;
+      border-radius: .12rem;
+      color: #fff;
+      padding: 0.1rem; }
+
+.nav-wraps li:last-child {
+  justify-content: flex-end; }
+
+.app-wrap {
+  height: 4.8rem;
+  position: absolute;
+  padding: 0 0.24rem;
+  left: 0rem;
+  bottom: 1rem; }
+  .app-wrap ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .app-wrap li {
+    width: 3.42rem;
+    height: 2.27rem;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    align-items: center; }
+  .app-wrap .ktves {
+    width: 2.17rem;
+    height: 1.42rem;
+    background: url("/Public/img/ktv1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -.5rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    align-items: flex-end; }
+    .app-wrap .ktves h2 {
+      font-size: .26rem;
+      color: #fac91a;
+      margin-left: .5rem;
+      margin-top: .2rem; }
+  .app-wrap .ktves2 {
+    width: 2.17rem;
+    height: 1.42rem;
+    background: url("/Public/img/ktv2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    align-items: flex-end; }
+    .app-wrap .ktves2 h2 {
+      font-size: .26rem;
+      color: #a93fe6; }
+  .app-wrap .ktves3 {
+    width: 2.17rem;
+    height: 1.42rem;
+    background: url("/Public/img/ktv3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    align-items: flex-end; }
+    .app-wrap .ktves3 h2 {
+      font-size: .26rem;
+      color: #2ac6fe;
+      position: absolute;
+      margin-top: .3rem; }
+  .app-wrap .ktves4 {
+    width: 2.17rem;
+    height: 1.42rem;
+    background: url("/Public/img/ktv2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    align-items: flex-end; }
+    .app-wrap .ktves4 h2 {
+      font-size: .26rem;
+      color: #f03976;
+      margin-top: .2rem; }

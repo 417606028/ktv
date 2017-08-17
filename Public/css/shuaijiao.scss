@@ -1,0 +1,157 @@
+$url:"/Public/img/";
+@mixin full{
+  width: 100%;
+  height: 100%;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@mixin bac{
+  background-position: 50% 50%;
+  background-size: cover;
+
+}
+@mixin flex{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexcenter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin boxSizing{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.wraper{
+  @include full;
+  background-image: url($url + 'seclet.png');
+  @include bac;
+  .header-wraper{
+    width: 100%;
+    height: 1.8rem;
+    padding-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .header{
+    width: 100%;
+    height: 0.88rem;
+    @include flexcenter;
+  }
+  .header .left{
+    width: 0.59rem;
+    height: 0.59rem;
+    background-image: url($url + 'songslist_back.png');
+    @include bac;
+  }
+  .header .middle{
+    width: 5.2rem;
+    height: 0.88rem;
+    font-size: 0.28rem;
+    line-height: 0.88rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+  }
+  .header .right{
+    width: 1.2rem;
+    height: 0.88rem;
+    font-size: 0.28rem;
+    line-height: 0.88rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  .header .right span{
+    font-weight: 600;
+  }
+  .listwraper{
+    width: 100%;
+    height: auto;
+  }
+  .items{
+    width: 100%;
+    height: 1.4rem;
+    border-bottom: 1px dashed #BDBDBD;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    @include flexcenter;
+  }
+  .items .lefts{
+    width: 1.17rem;
+    height: 1.17rem;
+    @include boxSizing;
+  }
+  .items .middles{
+    width: 4.6rem;
+    height: 100%;
+    font-size: 0.24rem;
+    @include flexcenter;
+  }
+  .items .middles p:nth-child(1){
+    width: 100%;
+    padding-left: 0.4rem;
+    @include boxSizing;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.26rem;
+    font-weight: 600;
+    color: #58606D;
+  }
+  .items .middles p:nth-child(2){
+    width: 100%;
+    padding-left: 0.4rem;
+    @include boxSizing;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.26rem;
+    color: #C6C6C6;
+  }
+  .items .rights{
+    width: 1.3rem;
+    height: 100%;
+    @include flexcenter;
+  }
+  .items .adds{
+    width: 0.52rem;
+    height: 0.52rem;
+    background-image: url($url + 'caiyan_14.png');
+    @include bac;
+  }
+  .items .active{
+    width: 1.26rem;
+    height: 0.6rem;
+    background-image: url("/Public/img/caiyan_18.png");
+    background-size: cover;
+    background-position: center;
+    font-size: 0.26rem;
+  }
+  .items .lefts img{
+    display: block;
+    width: 1.05rem;
+    height: 1.05rem;
+    margin:  0 auto;
+    border-radius: 5px;
+    position: absolute;
+  }
+  .items .wrapers{
+    position: relative;
+  }
+  .items .wrapers div{
+    width: 1.05rem;
+    height: 1.05rem;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: rotate(30deg);
+    background: #FE3191;
+    border-radius: 5px;
+  }
+
+}

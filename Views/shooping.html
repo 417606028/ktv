@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <script src="/Public/js/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/Public/js/shooping.js"></script>
+    <link rel="stylesheet" href="/Public/css/rem.css">
+    <!--<script src="/Public/js/rem.js"></script>-->
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/shooping.css">
+    <title>商城</title>
+</head>
+<body>
+<div class="ssj_already">
+    <div class="ssj_lyrics">
+        <div class="ssj_head">
+            发现
+            <a href="javascript:history.go(-1);" ><div class="return"></div></a>
+        </div>
+        <ul class="ssj_choice">
+            <li class="ssj_item  active left">
+                <span>酒水</span>
+                <span class="num">0</span>
+            </li>
+            <li class="ssj_item right">
+                <span>零食</span>
+                <span class="num">0</span>
+            </li>
+        </ul>
+        <ul class="ssj_wine show">
+            <?php foreach($fn as $v):?>
+            <li class="ssj_item" data='<?php echo json_encode($v);?>'>
+                <div class="ssj_pic">
+                    <img src="<?php echo $v['pic'];?>" alt="">
+                </div>
+                <ul class="dataBox">
+                    <li class="name">
+                        <span class="names"><?php echo $v['name'];?></span>
+                        <?php for($i=0;$i<$v['hot'];$i++):?>
+                           <div></div>
+                        <?php endfor ;?>
+                    </li>
+                    <li class="price">
+                        <span class="symble">￥</span>
+                        <span class="num"><?php echo $v['price']?></span>
+                        <span>/瓶</span>
+                    </li>
+                    <li class="operate">
+                        <div class="subtract"></div>
+                        <span class="num">0</span>
+                        <div class="plus"></div>
+                    </li>
+                </ul>
+            </li>
+            <?php endforeach ;?>
+        </ul>
+        <ul class="ssj_wine">
+            <?php foreach($fn1 as $v):?>
+            <li class="ssj_item" data='<?php echo json_encode($v);?>'>
+                <div class="ssj_pic">
+                    <img src="<?php echo $v['pic'];?>" alt="">
+                </div>
+                <ul class="dataBox">
+                    <li class="name">
+                        <span class="names"><?php echo $v['name'];?></span>
+                        <?php for($i=0;$i<$v['hot'];$i++):?>
+                           <div></div>
+                        <?php endfor ;?>
+                    </li>
+                    <li class="price">
+                        <span class="symble">￥</span>
+                        <span class="num"><?php echo $v['price']?></span>
+                        <span>/瓶</span>
+                    </li>
+                    <li class="operate">
+                        <div class="subtract"></div>
+                        <span class="num">0</span>
+                        <div class="plus"></div>
+                    </li>
+                </ul>
+            </li>
+            <?php endforeach ;?>
+        </ul>
+        <div class="ssj_footer">
+            <div class="ssj_xuan">
+                <div class="span">已选</div>
+                <div class="choice-item"></div>
+                <div class="more">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+
+            <div class="ssj_bottom">
+                <div class="result">
+                    <span class="span">合计</span>
+                    <span class="num">0.00</span>
+                    <span class="rmb">RMB</span>
+                </div>
+                <div class="submit">
+                    <span>选好了</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

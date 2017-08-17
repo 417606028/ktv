@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>歌手</title>
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/wgb.css">
+    <link rel="stylesheet" href="/Public/css/songList.css">
+    <link rel="stylesheet" href="/Public/css/rem.css">
+    <script src="/Public/js/jquery.min.js"></script>
+    <!--<script src="/Public/js/rem.js"></script>-->
+</head>
+<body>
+    <div class="wraper">
+        <div class="songs-wraper">
+            <div class="songslist">
+                <div class="songsmenu">
+                    <a href="javascript:history.go(-1);" class="songsback"></a>
+                    <p>歌手</p>
+                    <div class="songs-selected"><a href="/index.php/sing/select">已点歌曲</a></div>
+                </div>
+                <?php foreach ($fn as $v):?>
+                <div class="singerinfo">
+                    <div class="sleft">
+                        <img src="<?php echo $v['pic'];?>" alt="">
+                    </div>
+                    <div class="sright">
+                        <p><?php echo $v['name'];?>--<?php echo $v['class_name'];?></p>
+                        <div class="infowraper">
+                            <div class="audios"></div>
+                            <p>歌曲&nbsp;&nbsp;<?php echo $s['count'] ?></p>
+                            <div class="videos"></div>
+                            <p>MV&nbsp;&nbsp;&nbsp;<?php echo $s['count'] ?></p>
+                        </div>
+                        <div class="point"></div>
+                        <p>本月点击量:<span>&nbsp;</span></p>
+                    </div>
+                </div>
+                <?php endforeach ;?>
+            </div>
+
+            <?php include 'Views/songList.html';?>
+        </div>
+    </div>
+</body>
+</html>

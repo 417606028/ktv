@@ -1,0 +1,115 @@
+.wraper{
+    width: 100%;
+    height: 100%;
+    background-image: url("/Public/img/homepage.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.head{
+    width: 100%;
+    height: 0.6rem;
+    position: absolute;
+    top: 0.35rem;
+    color: #ffffff;
+    font-size: 0.26rem;
+    padding-left: 0.2rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.head .locations{
+    width: 0.4rem;
+    height: 0.6rem;
+    background-image: url("/Public/img/home_location.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    padding-right: 0.1rem;
+}
+.head .lns{
+    width: 0.8rem;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background-image: url("/Public/img/home_point.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    padding-bottom: 0.1rem;
+    box-sizing: border-box;
+}
+.home-wraper .logo{
+    width: 7.02rem;
+    height: 3.68rem;
+    background-image: url("/Public/img/home_logo.png");
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 4.76rem;
+    left: -0.38rem;
+}
+.home-wraper .content-wraper{
+    width: 100%;;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:8.1rem;
+}
+.home-wraper .content-wraper>div{
+    width: 3.4rem;
+    height: 2.3rem;
+}
+.home-wraper .content-wraper .songs{
+    background-image: url("/Public/img/home_songs.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.2rem;
+}
+.home-wraper .content-wraper .games{
+    background-image: url("/Public/img/home_game.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.2rem;
+}
+.home-wraper .content-wraper .shops{
+    background-image: url("/Public/img/home_songs.png");
+    background-size: cover;
+    background-position: center;
+}
+.home-wraper .content-wraper .mines{
+    background-image: url("/Public/img/home_mine.png");
+    background-size: cover;
+    background-position: center;
+}
+.home-wraper .content-wraper>div>a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.home-wraper .content-wraper>div span{
+    display: block;
+    width: 100%;
+    height: 0.24rem;
+    font-size: 0.24rem;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    bottom: 0.48rem;
+}
+.home-wraper .content-wraper .song{
+    color: #FACA21;
+}
+.home-wraper .content-wraper .game{
+    color: #A93FE6;
+}
+.home-wraper .content-wraper .store{
+    color: #1FC8FF;
+}
+.home-wraper .content-wraper .mine{
+    color: #EF3976;
+}

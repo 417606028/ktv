@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>uek音乐app</title>
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="/Public/js/jquery.min.js"></script>
+    <!--<script src="/Public/js/rem.js"></script>-->
+    <script src="/Public/js/rank.js"></script>
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/singer8.css">
+    <link rel="stylesheet" href="/Public/css/songList.css">
+    <link rel="stylesheet" href="/Public/css/rem.css">
+</head>
+
+<body>
+<div class="app">
+    <div class="wrapers">
+        <div class="nav">
+            <ul class="nav-wraps">
+                <li>
+                    <a href="javascript:history.go(-1)"><div class="icon"></div></a>
+                </li>
+                <li>
+                    <div class="gs">排行榜</div>
+                </li>
+                <li><div class="songs-selected"><a href="/index.php/sing/select">已点歌曲</a></div></li>
+            </ul>
+        </div>
+        <div class="sub-nav">
+            <ul class="sub-navs">
+                <li class="first-cdren">
+                    <a href="/index.php/sing/index">
+                        <div class="imgs"></div>
+                        <h2>歌手</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.php/sing/index">
+                        <h2>排行</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.php/sing/fav">
+                        <h2>常唱</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.php/sing/rec">
+                        <h2>推荐歌单</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn">
+            <div class="search">
+                <ul>
+                    <li class="month">月排行</li>
+                    <li class="seation active">季排行</li>
+                    <li class="year">年排行</li>
+                </ul>
+            </div>
+        </div>
+        <div class="imgBox">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <div class="sousuo">
+                    <h2>演员-薛之谦</h2>
+                    <div class="sourse">
+                        <div class="imges"></div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <?php include 'Views/songList.html';?>
+        </div>
+    </div>
+</div>
+</body>
+</html>

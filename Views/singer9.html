@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>uek音乐app</title>
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="/Public/js/jquery.min.js"></script>
+    <!--<script src="/Public/js/rem.js"></script>-->
+    <link rel="stylesheet" href="/Public/css/rem.css">
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/singer9.css">
+</head>
+
+<body>
+<div class="app">
+    <div class="wrapers">
+        <div class="nav">
+            <ul class="nav-wraps">
+                <li>
+                    <a href="/index.php/sing/"><div class="icon"></div></a>
+                </li>
+                <li>
+                    <div class="gs">推荐歌单</div>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="wraps">
+            <ul>
+                <?php foreach($fn as $v):?>
+                <li>
+                    <a href="<?php echo $v['url'];?>">
+                        <img src="<?php echo $v['pic'];?>" alt="">
+                        <div class="lis1"><span><?php echo $v['name'];?></span></div>
+                        <div class="lis2">
+                            <div class="one">
+                                <div class="user"></div>
+                                <div class="tit"><span><?php echo $v['count'];?></span>万</div>
+                            </div>
+                            <div class="two">
+                                <div class="user"></div>
+                                <div class="tit"><span><?php echo $v['men'];?></span>万</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <?php endforeach;?>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

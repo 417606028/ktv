@@ -1,0 +1,58 @@
+.songsitems{
+    width: 100%;
+    height:auto;
+    margin-top: 0.6rem;
+}
+.songsitems li{
+    width: 100%;
+    height: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px dashed #B7B7B7;
+}
+.songsitems li .left{
+    color: #F73C5F;
+    width: 0.6rem;
+    height: 0.35rem;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0;
+    font-weight: 600;
+}
+.songsitems li .middle{
+    color: #89919E;
+    width: 5.46rem;
+    font-size: 0.26rem;
+    margin-left: 0.4rem;
+}
+.songsitems li .right{
+    transition: all 0.3s ease;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url("/Public/img/caiyan_14.png");
+    background-size: cover;
+    background-position: center;
+    font-size: 0.26rem;
+}
+.songsitems li .right.rotate{
+    transform: rotateZ(-405deg);
+
+}
+.songs-selected{
+    width: 1.08rem;
+    height: 0.48rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.songs-selected>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}

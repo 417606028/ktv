@@ -1,0 +1,21 @@
+.affix{
+    padding: 30px;
+}
+.affix a{
+    color: #000000;
+}
+.affix .music{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #797979;
+}
+.affix .nav>li{
+    margin-top: 10px;
+}
+.affix .nav>li.active{
+    color: #ccc;
+    line-height: 20px;
+    border-left: 2px solid #f40;
+}

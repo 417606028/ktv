@@ -1,0 +1,15 @@
+<ul class="songsitems">
+    <?php foreach($fn1 as $k=>$i):?>
+    <li data='<?php  echo json_encode($i)?>' class="<?php echo 'c'.$i['id'] ?>">
+        <div class="left" >
+            <?php echo "0{$k}"?>
+        </div>
+        <div class="middle">
+            <p><?php echo $i['name'];?></p>
+            <p><?php echo $i['duration']; ?></p>
+        </div>
+        <div class="right"></div>
+    </li>
+    <?php endforeach;?>
+</ul>
+<script src="/Public/js/songList.js"></script>

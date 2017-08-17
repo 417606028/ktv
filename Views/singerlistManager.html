@@ -1,0 +1,105 @@
+<?php include 'Views/Manager_header.html';?>
+<div class="container-fluid">
+    <div class="col-md-3">
+        <?php include 'Views/sidebar.html'; ?>
+    </div>
+    <div class="col-md-9">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active" id="add"><a href="#add" >添加信息</a></li>
+            <li role="presentation" id="list"><a href="#list" >信息列表</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="add-pane">
+                <!--新增-->
+                <div class="panel panel-success" style="width:600px;margin: 10px auto">
+                    <div class="panel-heading">新增分类</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" id="form" >
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">分类名称</label>
+                                <div class="col-sm-10">
+                                    <input name="name" type="text" class="form-control" id="inputEmail3" placeholder="请输入分类名称" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-2 control-label">分类地址</label>
+                                <div class="col-sm-10">
+                                    <input name="url" type="text" class="form-control" placeholder="请输入地址">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-2 control-label">图片地址</label>
+                                <div class="col-sm-10">
+                                    <label for="file" id="upload" class="col-sm-10" style="display: block;padding-top: 7px;">点击上传背景图</label>
+                                    <input name="file" id="file"  style="display: none;" type="file" class="form-control" placeholder="请输入引用图片地址">
+                                </div>
+                            </div>
+                            <div class="form-group" >
+                                <label for="" class="col-sm-2 control-label">分类类型</label>
+                                <div class="col-sm-10" style="display: flex">
+                                    <div class="radio" style="margin-right: 20px">
+                                        <label>
+                                            <input type="radio" name="type" id="optionsRadios1" value="1" checked>
+                                            大图
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="type" id="optionsRadios3" value="2">
+                                            小图
+                                        </label>
+                                    </div> <div class="radio">
+                                    <label>
+                                        <input type="radio" name="type" id="optionsRadios4" value="3">
+                                        半图
+                                    </label>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default">确定</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="list-pane">
+                <!--列表-->
+                <div class="panel">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">内容列表</div>
+                        <table class="table">
+                            <thead style="text-align: center">
+                            <tr >
+                                <th>id</th>
+                                <th>分类名称</th>
+                                <th>分类地址</th>
+                                <th>图片地址</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/Public/js/singerClassManager.js"></script>
+<style>
+    tbody input{
+        border:none;
+        outline: none;
+        border-bottom: 1px solid #cccccc;
+    }
+</style>

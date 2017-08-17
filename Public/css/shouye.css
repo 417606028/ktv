@@ -1,0 +1,390 @@
+/*
+* @Author: Administrator
+* @Date:   2017-06-07 09:12:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-06-07 09:55:36
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-style: normal;
+	font-weight: 400;
+}
+html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+.app{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.wrapers{
+	width: 100%;
+	height: 100%;
+	padding: 0 0.24rem;
+	box-sizing: border-box;
+	background-image: url('/Public/img/1.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.nav{
+	width: 100%;
+	height: 0.88rem;
+}
+.sub-navs li a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.sub-navs li > a .imgs {
+	width: .3rem;
+	height: .3rem;
+	background-image: url("/Public/img/music.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: .1rem;
+}
+.nav-wraps{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.nav-wraps li{
+	width: 33.33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-wraps li a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-wraps li> a .icon{
+	width: 0.4rem;
+	height: 0.4rem;
+	background-image: url("/Public/img/icon.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	align-self: center;
+}
+.nav-wraps li>.gs{
+	flex:1;
+	color:#fff;
+	font-size: .34rem;
+	text-align: center;
+	align-self: center;
+	font-weight: 400;
+}
+.nav-wraps li:last-child{
+	justify-content: flex-end;
+}
+.nav-wraps li a .yd{
+	height: 0.25rem;
+	font-size: .24rem;
+	border: 1px solid #fff;
+	border-radius: .12rem;
+	color:#fff;
+	padding: 0.1rem;
+	align-self: center;
+	margin-left: 1rem;
+}
+.sub-nav{
+	width:100%;
+	height: .52rem;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.sub-navs{
+	width:100%;
+	height: 100%;
+	display: flex;
+}
+
+.sub-navs li{
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.sub-navs li a{
+	width: 100%;
+	height: 100%;
+	color:#fff;
+	font-size: .2rem;
+	text-align: center;
+	line-height: .52rem;
+}
+.sub-navs li:first-child{
+	justify-content: flex-start;
+}
+.sub-navs li:last-child{
+	justify-content: flex-end;
+}
+.sub-navs li>.imgs{
+	width: .3rem;
+	height: .3rem;
+	background-image: url("../images/music.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+.sub-navs li> h2{
+	font-size: .26rem;
+	color:#fff;
+	font-weight: 400;
+	text-align: center;
+	line-height: .52rem;
+	padding: 5px;
+}
+.btn{
+	width: 100%;
+	height: .7rem;
+	background: #fff;
+	border-radius: 3px;
+	display: flex;
+}
+.btn>.search{
+	width: 3.33rem;
+	height: 100%;
+	padding: 0 5px;
+	margin: 0 auto;
+	display: flex;
+}
+.btn-icon{
+	width:.4rem;
+	height: .4rem;
+	background-image: url("../images/btn-icon.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	align-self: center;
+}
+.search>input{
+	width:2.7rem;
+	height: 100%;
+	outline: none;
+	border:0;
+	text-align: center;
+	font-size: 0.26rem;
+	color:#c1c2ce;
+	letter-spacing: .01rem;
+}
+.mins{
+	width: 100%;
+	height: auto;
+	margin-top: .27rem;
+	background: #fff;
+}
+.mins ul{
+	width: 100%;
+	height: auto;
+	padding:2px;
+	display: flex;
+	background: #fff;
+	flex-wrap: wrap;
+	flex-direction: row;
+	box-sizing: border-box;
+	-webkit-box-pack: justify;
+	justify-content: flex-start;
+	align-items: center;
+}
+.mins ul li{
+	justify-content: space-between;
+}
+.mins ul li:first-child{
+	width: 100%;
+	height: 3.95rem;
+	background-image: url("../images/singer1.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.maskes{
+	width: 4.7rem;
+	height: 1.4rem;
+	background: rgba(0,0,0,0.15);
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+}
+.maskes h2{
+	width: 100%;
+	height: 0.4rem;
+	color:#fff;
+	font-size: .24rem;
+	text-align: center;
+	margin-top: .5rem;
+	letter-spacing: .02rem;
+}
+.title{
+	width: 70%;
+	height: 0.4rem;
+	background: url("../images/title.png") center center no-repeat;
+	background-size: contain;
+	margin:0 auto;
+}
+.mins ul li a{
+	font-size: .26rem;
+	color:#fff;
+}
+.mins ul li:nth-child(2){
+	width: 39.5%;
+	height: 2.13rem;
+	margin: 1px 0;
+	background: url('../images/boy.png') center center no-repeat;
+	background-size: cover;
+	color :#fff;
+	text-align: center;
+	line-height: 2.13rem;
+	font-size: .24rem;
+	box-sizing: border-box;
+}
+.mins ul li:nth-child(3){
+	width:29.9%;
+	height: 2.13rem;
+	margin: 1px 1px;
+	background: url('../images/girl1.png') center center no-repeat;
+	background-size: cover;
+	color :#fff;
+	text-align: center;
+	line-height: 2.13rem;
+	font-size: .24rem;
+	box-sizing: border-box;
+}
+.mins ul li:nth-child(4){
+	width:29.9%;
+	height: 2.13rem;
+	margin: 1px 0;
+	background: url('../images/girl2.png') center center no-repeat;
+	background-size: cover;
+	color :#fff;
+	text-align: center;
+	line-height: 2.13rem;
+	font-size: .24rem;
+}
+.mins ul li:nth-child(5){
+	width:39.9%;
+	height: 3.29rem;
+	margin: 1px 0;
+	background: url('../images/gril3.jpg') center center no-repeat;
+	background-size: cover;
+	color :#fff;
+	text-align: center;
+	line-height: 2.13rem;
+	font-size: .24rem;
+	position: relative;
+}
+.mins ul li:nth-child(6){
+	width:60%;
+	height: 3.29rem;
+	background: url('../images/girl4.jpg') center center no-repeat;
+	background-size: cover;
+	color :#fff;
+	text-align: center;
+	line-height: 2.13rem;
+	font-size: .24rem;
+	position: relative;
+}
+.zz{
+	width:2rem;
+	height: 1rem;
+	background:rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 1rem;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin: auto;
+}
+.singers-list{
+	width: 100%;
+	height: auto;
+	margin-top: .27rem;
+	display: flex;
+}
+.singers-list ul{
+	/*width:100%;*/
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.singers-list ul li{
+	width: 30.334%;
+	height: 3.52rem;
+}
+.singers-list ul li .singer-top{
+	width: 100%;
+	height: 2.94rem;
+	box-shadow: 0 2px 0.2rem rgba(240,140,220,.5);
+}
+.singers-list ul li:first-child .singer-top{
+	background: url("../images/singer11.png") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li:nth-child(2) .singer-top{
+	background: url("../images/singer2.png") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li:nth-child(3) .singer-top{
+	 background: url("../images/singer3.jpg") center center no-repeat;
+	 background-size: cover;
+ }
+.singers-list ul li:nth-child(4) .singer-top{
+	 background: url("../images/singer4.jpg") center center no-repeat;
+	 background-size: cover;
+ }
+.singers-list ul li:nth-child(5) .singer-top{
+	background: url("../images/singer5.jpg") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li:nth-child(6) .singer-top{
+	background: url("../images/singer6.jpg") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li:nth-child(7) .singer-top{
+	background: url("../images/singer11.png") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li:nth-child(8) .singer-top{
+	background: url("../images/singer2.png") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li:nth-child(9) .singer-top{
+	background: url("../images/singer7.jpg") center center no-repeat;
+	background-size: cover;
+}
+.singers-list ul li p{
+	font-size: .26rem;
+	color:#575861;
+	line-height: .5rem;
+}
+

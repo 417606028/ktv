@@ -1,0 +1,169 @@
+.wraper {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-image: url("/Public/img/seclet.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.wraper .header-wraper {
+  width: 100%;
+  height: 1.8rem;
+  padding-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.wraper .header {
+  width: 100%;
+  height: 0.88rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wraper .header .left {
+  width: 0.59rem;
+  height: 0.59rem;
+  background-image: url("/Public/img/songslist_back.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.wraper .header .middle {
+  width: 5.2rem;
+  height: 0.88rem;
+  font-size: 0.28rem;
+  line-height: 0.88rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.wraper .header .right {
+  width: 1.2rem;
+  height: 0.88rem;
+  font-size: 0.28rem;
+  line-height: 0.88rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.wraper .header .right span {
+  font-weight: 600;
+}
+
+.wraper .listwraper {
+  width: 100%;
+  height: auto;
+}
+
+.wraper .items {
+  width: 100%;
+  height: 1.4rem;
+  border-bottom: 1px dashed #BDBDBD;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wraper .items .lefts {
+  width: 1.17rem;
+  height: 1.17rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.wraper .items .middles {
+  width: 4.6rem;
+  height: 100%;
+  font-size: 0.24rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wraper .items .middles p:nth-child(1) {
+  width: 100%;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.26rem;
+  font-weight: 600;
+  color: #58606D;
+}
+
+.wraper .items .middles p:nth-child(2) {
+  width: 100%;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.26rem;
+  color: #C6C6C6;
+}
+
+.wraper .items .rights {
+  width: 1.3rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wraper .items .adds {
+  width: 0.52rem;
+  height: 0.52rem;
+  background-image: url("/Public/img/caiyan_14.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.wraper .items .active {
+  width: 1.26rem;
+  height: 0.6rem;
+  background-image: url("/Public/img/caiyan_18.png");
+  background-size: cover;
+  background-position: center;
+  font-size: 0.26rem;
+}
+
+.wraper .items .lefts img {
+  display: block;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.wraper .items .wrapers {
+  position: relative;
+}
+
+.wraper .items .wrapers div {
+  width: 1.05rem;
+  height: 1.05rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(30deg);
+  background: #FE3191;
+  border-radius: 5px;
+}

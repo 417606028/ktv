@@ -1,0 +1,228 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "苹方 粗体";
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow: scroll;
+}
+
+.truth {
+  height: 100%;
+  width: 100%;
+  padding: 0 0.24rem;
+  box-sizing: border-box;
+  background: url("/Public/img/gamebj.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+  height: 0.88rem;
+  font-size: 0.34rem;
+  text-align: center;
+  position: relative;
+  line-height: 0.88rem;
+  color: #fff;
+}
+
+.header .lefts {
+  width: 1.1rem;
+  height: 0.6rem;
+  border: 1px solid #FFFFFF;
+  float: right;
+  border-radius: 0.2rem;
+  margin-right: 0.2rem;
+  margin-top: 0.1rem;
+  text-align: center;
+  line-height: 0.6rem;
+  color: #58606D;
+}
+
+.header .active {
+  color: #FFFFFF;
+}
+
+.header .arrow {
+  height: 0.4rem;
+  width: 0.4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url("/Public/img/jiantou.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.center {
+  width: 7rem;
+  height: 7rem;
+  margin-top: 0.2rem;
+  border-radius: 0.1rem;
+  background: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.cardbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  box-shadow: 0 0 0.2rem #fe81a6;
+}
+
+.cardbox .card {
+  width: 2rem;
+  height: 2rem;
+  background: url("/Public/img/cardt.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.2rem;
+  font-size: 0;
+  transition: all 2s ease 0s;
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-right: 0.1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-overflow: clip;
+}
+
+.cardbox .active {
+  background: #FE318E;
+  transform: rotateY(360deg);
+  font-size: 0.04rem;
+  color: #c2d03a;
+}
+
+.notes {
+  width: 100%;
+  height: 2.6rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  -webkit-box-pack: justify;
+}
+
+.notice {
+  width: 100%;
+  height: 2.1rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 0.3rem;
+  color: #fe318e;
+}
+
+h2 {
+  font-size: 0.26rem;
+}
+
+h2 > p {
+  display: block;
+  font-size: 0.26rem;
+  color: #fe318e;
+}
+
+.theme {
+  margin-top: 0.1rem;
+}
+
+.theme > p {
+  font-size: 0.26rem;
+  color: #87878c;
+  line-height: 0.4rem;
+}
+
+.truth-re {
+  margin-bottom: 0.4rem;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 0.2rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.footer > div {
+  width: 3.4rem;
+  height: 0.7rem;
+  border-radius: 0.1rem;
+  border: 1px solid #fe318e;
+  font-size: 0.34rem;
+  text-align: center;
+  line-height: 0.7rem;
+}
+
+.footer .active {
+  color: #fff;
+  background: #fe318e;
+}
+
+#alert {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: all 0.3s ease 0s;
+}
+
+#alert #info {
+  width: 100%;
+  height: 6.28rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("/Public/img/alert.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 6.28rem;
+  color: #000;
+  font-size: 0.4rem;
+}
+
+.inherit {
+  transform: scale(0, 0);
+}
+
+.active {
+  transform: scale(1, 1);
+}

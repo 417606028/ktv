@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>房间链接</title>
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/games.css">
+    <link rel="stylesheet" href="/Public/css/rem.css">
+    <script src="/Public/js/jquery.min.js"></script>
+    <!--<script src="/Public/js/rem.js"></script>-->
+    <script src="/Public/js/game.js"></script>
+</head>
+<body>
+<div class="wraper">
+    <div class="header-wraper">
+        <div class="header">
+            <div class="left"><a href="/index.php/"></a></div>
+            <div class="middle">游戏</div>
+        </div>
+    </div>
+    <div class="main">
+        <?php foreach($fn as $v):?>
+        <div class="items">
+            <a href="<?php echo $v['url']; ?>">
+                <img src="<?php echo $v['imgs'] ;?>" alt="">
+                <p><?php echo $v['name'] ?></p>
+            </a>
+        </div>
+        <?php endforeach;?>
+    </div>
+</div>
+</body>
+</html>

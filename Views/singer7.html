@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>uek音乐app</title>
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="/Public/js/jquery.min.js"></script>
+    <!--<script src="/Public/js/rem.js"></script>-->
+    <script src="/Public/js/playMusic.js"></script>
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/singer7.css">
+    <link rel="stylesheet" href="/Public/css/rem.css">
+</head>
+<style>
+    .lyricMask{
+        width: 100%;
+        height: 0.5rem;
+        background: rgba(0,0,0,.2);
+        position: absolute;
+        left:0;
+        top: 1.2rem;
+    }
+</style>
+<body>
+<div class="app">
+    <div class="lyricMask"></div>
+    <audio src="<?php echo $data['src'];?>" id="audio" style="position: absolute"></audio>
+    <div class="wrapers">
+        <div class="nav">
+            <ul class="nav-wraps">
+                <li>
+                    <div class="icon"><a style="display: block;width: 100%;height: 100%;" href="/index.php/sing/"></a></div>
+                </li>
+                <li>
+                    <div class="gs"><?php echo $data['name'];?></div>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+        <input type="hidden" value="<?php echo $data['name']?>">
+        <div class="title">
+            <ul class="lyric-wraper">
+
+            </ul>
+        </div>
+        <div class="tagger">
+            <div class="tagger-top">
+                <ul>
+                    <li>
+                        <div class="imgs native"></div>
+                        <h2>原/伴唱</h2>
+                    </li>
+                    <li>
+                        <div class="imgs next"></div>
+                        <h2>切歌</h2>
+                    </li>
+                    <li>
+                        <div class="imgs play"></div>
+                        <h2>播放</h2>
+                    </li>
+                    <li>
+                        <div class="imgs update"></div>
+                        <h2>上传</h2>
+                    </li>
+                    <li>
+                        <div class="imgs direct"></div>
+                        <h2>录歌</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="jingdu">
+                <div class="shengyin duration">
+                    <div class="btn"></div>
+                    <div class="jd boxwraper">
+                        <div class="jdt dTime"></div>
+                        <div class="dian dPoint"></div>
+                    </div>
+                    <span class="percent"></span>
+                </div>
+                <div class="laba">
+                    <div class="btn"></div>
+                    <div class="jd valumebox" style="position: relative">
+                        <div class="jdt progress" id="progress" ></div>
+                        <div class="dian point" id="point" ></div>
+                    </div>
+                    <span class="volume">62</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

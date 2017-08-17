@@ -1,0 +1,101 @@
+.wraper {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-image: url("/Public/img/seclet.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.wraper .header-wraper {
+  width: 100%;
+  height: 1.8rem;
+  padding-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.wraper .header {
+  width: 100%;
+  height: 0.88rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wraper .header .left {
+  width: 0.59rem;
+  height: 0.59rem;
+  background-image: url("/Public/img/songslist_back.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.wraper .header .middle {
+  width: 5.2rem;
+  height: 0.88rem;
+  font-size: 0.295rem;
+  line-height: 0.88rem;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-weight: 500;
+}
+
+.wraper .main {
+  width: 100%;
+  height: 4.7rem;
+  position: absolute;
+  top: 3.66rem;
+  padding: 0 2rem;
+}
+
+.wraper .main .tops {
+  width: 3rem;
+  height: 3.52rem;
+  background-image: url("/Public/img/sub_03.png");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.wraper .main .footers {
+  width: 3rem;
+  height: 0.88rem;
+  background-image: url("/Public/img/sub_05.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  font-size: 0.26rem;
+  color: #F22A8D;
+  line-height: 0.88rem;
+  text-align: center;
+}
+
+.wraper .footer {
+  width: 6.5rem;
+  height: 1.06rem;
+  background-image: url("/Public/img/sub_08.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.87rem;
+  margin: auto;
+  box-shadow: 0 0 3px 3px #EBEBEB;
+  -webkit-box-shadow: 0 0 3px 3px #EBEBEB;
+  -moz-box-shadow: 0 0 3px 3px #EBEBEB;
+}
+
+.wraper .footer a {
+  font-size: 0.26rem;
+  line-height: 1.06rem;
+  text-align: center;
+  color: #FEEDF6;
+  font-weight: 600;
+}

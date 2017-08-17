@@ -1,0 +1,301 @@
+//通用选择器
+@mixin center{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-style: normal;
+  font-weight: 400;
+}
+//包裹盒子
+@mixin wrap{
+  width: 100%;
+  height: 100%;
+}
+//地址
+$url:"/Public/img/";
+//图片
+@mixin img{
+  //background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+//flex布局
+@mixin flex{
+  display: flex;
+  -webkit-box-pack: justify;
+}
+//文字
+@mixin title{
+  text-align: center;
+}
+//定位
+@mixin position($width,$height){
+  width: $width;
+  height: $height;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height) / 2;
+  margin-left: -($width) / 2;
+}
+@mixin pos($w,$h){
+  width: $w;
+  height: $h;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($h) / 2;
+  margin-left: -($w) / 2;
+}
+*{
+  @include center;
+}
+html{
+  @include wrap;
+  overflow: hidden;
+}
+body{
+  @include wrap;
+  overflow:scroll;
+}
+.app{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background:url($url + "singer71.PNG");
+  @include img;
+  .wrapers{
+    @include wrap;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    .nav{
+      width: 100%;
+      height: 0.88rem;
+    }
+  }
+}
+.nav{
+  width: 100%;
+  height: 0.88rem;
+  .nav-wraps{
+    @include wrap;
+    @include flex;
+    justify-content: space-between;
+    li{
+      width: 33.33%;
+      height: 100%;
+      display: flex;
+    }
+    .icon{
+      width: 0.4rem;
+      height: 0.4rem;
+      background:url($url + "icon.png");
+      @include img;
+      align-self: center;
+    }
+    .gs{
+      @include title;
+      flex:1;
+      align-self: center;
+      color:#fff;
+      font-size: .36rem;
+      font-weight: 600;
+    }
+    .yd{
+      justify-content: flex-end;
+      align-self: center;
+      height: 0.25rem;
+      font-size: .24rem;
+      color:#fff;
+      padding: 0.1rem;
+    }
+  }
+}
+.nav-wraps li:last-child{
+  justify-content: flex-end;
+}
+.title{
+  width: 100%;
+  height: 6.75rem;
+  margin-top: .3rem;
+  overflow: hidden;
+  ul{
+    @include wrap;
+    overflow: scroll;
+    li{
+      width: 100%;
+      height: .32rem;
+      font-size: .26rem;
+      color:#fff;
+      text-align: center;
+      line-height: .32rem;
+      letter-spacing:1px;
+      margin-top:.15rem;
+    }
+    .hot{
+      color: #FFCC31;
+    }
+  }
+}
+.tagger{
+  height: 4.57rem;
+  margin-top: .8rem;
+  .tagger-top{
+    width: 100%;
+    height: 2.15rem;
+    background: #fff;
+    ul{
+      @include wrap;
+      @include flex;
+      justify-content:space-between;
+      align-items: center;
+      li{
+        width: .91rem;
+        height: 1.42rem;
+        .imgs{
+          width: 100%;
+          height: .91rem;
+        }
+        h2{
+          font-size: .26rem;
+          color:#575861;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.tagger-top ul li:nth-child(1) .imgs{
+  background:url($url + "play_09.png");
+  @include img;
+}
+.tagger-top ul li:nth-child(2) .imgs{
+  background:url($url + "play_15.png");
+  @include img;
+}
+.tagger-top ul li:nth-child(3) .imgs{
+  width: 100%;
+  height: 100%;
+  background:url($url + "play_03.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top:-.2rem;
+}
+.tagger-top ul li:nth-child(3) .paused{
+  width: 100%;
+  height: 100%;
+  background:url($url + "play_paused.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top:-.2rem;
+}
+.tagger-top ul li:nth-child(3){
+  width: 1.14rem;
+  height: 1.14rem;
+
+}
+.tagger-top ul li:nth-child(4) .imgs{
+  background:url($url + "play_06.png");
+  @include img;
+}
+.tagger-top ul li:nth-child(5) .imgs{
+  background:url($url + "play_12.png");
+  @include img;
+}
+.jingdu{
+  width: 100%;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  .shengyin{
+    height:.87rem;
+    padding:0 0.24rem;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn{
+      width: .4rem;
+      height: 100%;
+      background:url($url + "huatong.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .jd{
+      width: 5.13rem;
+      height: .05rem;
+      background: #e8d9dd;
+      border-radius: 3px;
+      position: relative;
+      .jdt{
+        width: 3rem;
+        height: .05rem;
+        position: absolute;
+        top:0;
+        left:0;
+        background: #ff318d;
+        border-radius: 3px;
+      }
+      .dian{
+        position: absolute;
+        top:-.17rem;
+        left:2.7rem;
+        width: .43rem;
+        height: .43rem;
+        background:url($url + "dian.png");
+        background-size: 100%;
+      }
+    }
+    span{
+      font-size:.3rem;
+      color:#838389;
+    }
+  }
+  .laba{
+    height:.87rem;
+    padding:0 0.24rem;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn{
+      width: .6rem;
+      height: 100%;
+      background:url($url + "laba.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .jd{
+      width: 5.13rem;
+      height: .05rem;
+      background: #e8d9dd;
+      border-radius: 3px;
+      position: relative;
+      .jdt{
+        width: 3rem;
+        height: .05rem;
+        position: absolute;
+        top:0;
+        left:0;
+        background: #ff318d;
+        border-radius: 3px;
+      }
+      .dian{
+        position: absolute;
+        top:-.17rem;
+        left:2.7rem;
+        width: .43rem;
+        height: .43rem;
+        background:url($url + "dian.png");
+        background-size: 100%;
+      }
+    }
+    span{
+      font-size:.3rem;
+      color:#838389;
+    }
+  }
+}
+

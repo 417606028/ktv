@@ -1,0 +1,105 @@
+<?php include 'Views/Manager_header.html';?>
+
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active" id="add"><a href="#add" >添加信息</a></li>
+        <li role="presentation" id="list"><a href="#list" >信息列表</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="add-pane">
+            <!--新增-->
+            <div class="panel panel-success" style="width:600px;margin: 10px auto">
+                <div class="panel-heading">新增商品</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" id="form" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">商品名称</label>
+                            <div class="col-sm-10">
+                                <input name="name" type="text" class="form-control" id="inputEmail3" placeholder="请输入商品名称" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">商品价格</label>
+                            <div class="col-sm-10">
+                                <input name="price" type="text" class="form-control" placeholder="请输入商品价格">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label">图片地址</label>
+                            <div class="col-sm-10">
+                                <label  id="upload" for="file" class="col-sm-10" style="display: block;padding-top: 7px;">点击上传图片</label>
+                                <input name="file" id="file" style="display: none" type="file" class="form-control" placeholder="请输入引用图片地址">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label">关注热度</label>
+                            <div class="col-sm-10">
+                                <input name="hot" type="text" class="form-control" placeholder="请填入推荐星级">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="" class="col-sm-2 control-label">商品类型</label>
+                            <div class="col-sm-10" style="display: flex">
+                                <div class="radio" style="margin-right: 20px">
+                                    <label>
+                                        <input type="radio" name="type" id="optionsRadios1" value="1" checked>
+                                        酒水
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="type" id="optionsRadios2" value="2">
+                                        零食
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">确定</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="list-pane">
+            <!--列表-->
+            <div class="panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">内容列表</div>
+                    <table class="table">
+                        <thead style="text-align: center">
+                        <tr >
+                            <th>id</th>
+                            <th>商品名称</th>
+                            <th>价格</th>
+                            <th>图片地址</th>
+                            <th>热度</th>
+                            <th>类型</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/Public/js/storeManager.js"></script>
+<style>
+    tbody input{
+        border:none;
+        outline: none;
+        border-bottom: 1px solid #cccccc;
+    }
+</style>

@@ -1,0 +1,146 @@
+.wraper{
+    width: 100%;
+    height: 100%;
+    background-image: url("/Public/img/caiyanhome.png");
+    background-position: center;
+    background-size: cover;
+}
+.songs-wraper{
+    width: 7.05rem;
+    height: 100%;
+    margin:0 auto;
+
+}
+.songslist{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+.songslist .songsmenu{
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.songsmenu .songsback{
+    display: block;
+    width: 0.49rem;
+    height: 0.49rem;
+    background-image: url("/Public/img/songslist_back.png");
+    background-size: cover;
+    background-position: center;
+}
+.songslist .songsmenu>p{
+    width: 4.8rem;
+    height: 0.88rem;
+    color: #ffffff;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.88rem;
+}
+.songslist .songsmenu .songs-selected{
+    width: 1.08rem;
+    height: 0.48rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+    text-align: center;
+}
+.songslist .songsmenu .songs-selected>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+.singerinfo{
+    width: 100%;
+    height: 2.36rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.singerinfo .sleft img{
+    width: 1.84rem;
+    height: 1.84rem;
+    display: block;
+}
+.singerinfo .sright{
+    width: 4.8rem;
+    height: auto;
+}
+.singerinfo .sright p{
+    font-size: 0.26rem;
+    color: #ffffff;
+}
+.singerinfo .sright .infowraper{
+    width: 90%;
+    height: 0.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px dashed #ffffff;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.3rem;
+}
+.singerinfo .sright .audios{
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("../img/caiyan_06.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.2rem;
+}
+.singerinfo .sright .videos{
+    width: 0.44rem;
+    height: 0.44rem;
+    background-image: url("/Public/img/caiyan_08.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.2rem;
+}
+.songsitems{
+    width: 100%;
+    height:auto;
+    margin-top: 0.6rem;
+}
+.songsitems li{
+    width: 100%;
+    height: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px dashed #B7B7B7;
+}
+.songsitems li .left{
+    color: #F73C5F;
+    width: 0.6rem;
+    height: 0.35rem;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0;
+    font-weight: 600;
+}
+.songsitems li .middle{
+    color: #89919E;
+    width: 5.46rem;
+    font-size: 0.26rem;
+    margin-left: 0.4rem;
+}
+.songsitems li .right{
+    transition: all 0.5s ease;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url("/Public/img/caiyan_14.png");
+    background-size: cover;
+    background-position: center;
+    font-size: 0.26rem;
+}
+.songsitems li .rotate{
+    transform: rotateZ(-405deg);
+}

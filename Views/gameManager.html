@@ -1,0 +1,81 @@
+<?php include 'Views/Manager_header.html';?>
+
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active" id="add"><a href="#add" >新增游戏</a></li>
+        <li role="presentation" id="list"><a href="#list" >内容列表</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="add-pane">
+            <!--新增-->
+            <div class="panel panel-success" style="width:600px;margin: 10px auto">
+                <div class="panel-heading">新增游戏</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" id="form" >
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">游戏名称</label>
+                            <div class="col-sm-10">
+                                <input name="name" type="text" class="form-control" id="inputEmail3" placeholder="请输入商品名称" >
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="" class="col-sm-2 control-label">游戏类型</label>
+                            <div class="col-sm-10" style="display: flex">
+                                <div class="radio" style="margin-right: 20px">
+                                    <label>
+                                        <input type="radio" name="type" id="optionsRadios1" value="1" checked>
+                                        真心话
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="type" id="optionsRadios2" value="2">
+                                        大冒险
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">确定</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="list-pane">
+            <!--列表-->
+            <div class="panel">
+                <div class="panel panel-default">
+                    <div class="panel-heading">内容列表</div>
+                    <table class="table">
+                        <thead style="text-align: center">
+                        <tr >
+                            <th>id</th>
+                            <th>游戏内容</th>
+                            <th>类型</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<style>
+    tbody input{
+        border:none;
+        outline: none;
+        border-bottom: 1px solid #cccccc;
+    }
+</style>
+<script src="/Public/js/gameManager.js"></script>

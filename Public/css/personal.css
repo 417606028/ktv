@@ -1,0 +1,176 @@
+
+*{
+	border: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-style: 400;
+}
+.bigbox{
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 0.24rem;
+	padding-left: 0.24rem;
+	background: url('/Public/img/yxbj.jpg') no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+} 
+header{
+	width: 100%;
+	height: 0.88rem;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	align-items:center;
+	margin-bottom: 1.25rem;
+}
+.back{
+	width: 0.44rem;
+	height: 0.44rem;
+	background: url('/Public/img/jiantou.png') no-repeat;
+	background-size: 100%;
+}
+header h2{
+	width: 96%;
+	color: #fff;
+	font-size: 0.36rem;
+	font-weight: 600;
+	text-align: center;
+}
+.foolt{
+	position: relative;
+	width: 100%;
+	background: url('/Public/img/yxbj1.png') no-repeat;
+	background-size: 100%;
+}
+.portrait{
+	position: absolute;
+	right: 0.5rem;
+	top: -0.8rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	background: url('/Public/img/yxtx.png') no-repeat;
+	background-size: 100%;
+}
+.name{
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 1.25rem;
+	padding-right: 0.45rem;
+	display: flex;
+	height: 0.95rem;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.mzname{
+	position: absolute;
+	right: 50%;
+	top: 10%;
+	width: 100%;
+	height: 0.86rem;
+	color: #fff;
+	font-size: 0.26rem;
+	display: -webkit-box;
+	display: flex;
+}
+.name>li{
+	color:#22b0fc;
+	font-size: 0.3rem;
+	margin-right: 0.4rem;
+}
+.indent{
+	width: 100%;
+	height:1.98rem;
+	padding: 0.38rem 0.15rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.indent>li{
+	width: 2.18rem;
+	height: 1.26rem;
+	border-radius: 5px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	
+}
+.indent .ones{
+	background: url('/Public/img/yxgz.png') center center no-repeat;
+	background-size: cover;
+}
+.indent .twos{
+	background: url('/Public/img/yxfs.png') center center no-repeat;
+	background-size: cover;
+}
+.indent .threes{
+	background: url('/Public/img/yxdd.png') center center no-repeat;
+	background-size: cover;
+}
+.indent .num{
+	padding: 0.18rem;
+	color: #ff2888;
+	font-size: 0.48rem
+}
+.indent .zi{
+	color: #22b0fc;
+	font-size: 0.24rem
+}
+.zp{
+	text-align: left;
+	width: 100%;
+	height: auto;
+	padding: 0 0.24rem;
+	box-sizing: border-box;
+	font-size: 0.3rem;
+	color: #f81f86;
+	font-weight: 600;
+}
+.song{
+	width: 100%;
+	overflow: hidden;
+	padding: 0.2rem;
+	box-sizing: border-box;
+
+}
+.song>li{
+	height: 1.15rem;
+	width: 100%;
+	border-bottom: 0.03rem dashed #bdbdbd;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction:column;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.song>li .songname{
+	width: 100%;
+	height: 40%;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	color: #89919e;
+	font-size: 0.26rem;
+}
+.song>li .songtime{
+	color: #c6c6c6;
+	width: 100%;
+	height: 40%;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	font-size: 0.26rem;
+}

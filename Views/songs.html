@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>点歌</title>
+    <link rel="stylesheet" href="/Public/css/index.css">
+    <link rel="stylesheet" href="/Public/css/songs.css">
+    <link rel="stylesheet" href="/Public/css/rem.css">
+    <script src="/Public/js/jquery.min.js"></script>
+    <!--<script src="/Public/js/rem.js"></script>-->
+    <script src="/Public/js/main.js"></script>
+</head>
+<body>
+    <div class="wraper">
+        <div class="songs-wraper">
+            <div class="songslist">
+                <div class="songsmenu">
+                    <a href="/index.php/" class="songsback"></a>
+                    <p>歌手</p>
+                    <div class="songs-selected"><a href="/index.php/sing/select">已点歌曲</a></div>
+                </div>
+                <div class="songlist">
+                    <div class="singer">
+                        <div class="musiclogo"></div>
+                        <a href="/index.php/sing/index">歌手</a>
+                    </div>
+                    <div class="songsrank"><a href="/index.php/sing/rank">排行</a></div>
+                    <div class="favorite"><a href="/index.php/sing/fav">常唱</a></div>
+                    <div class="fassionlist"><a href="/index.php/sing/rec">推荐歌单</a></div>
+                </div>
+                <div class="songs-soso">
+                    <div class="soso"></div>
+                    <input type="text" id="song-search" name="songs-sosuo" placeholder="请输入您要搜索的歌手">
+                </div>
+            </div>
+            <div class="songscontent-wraper">
+
+                <?php foreach ($fn as $v):?>
+                <div class="content-top">
+                    <a href="/index.php/sing/singer?id=<?php echo $v['id'];?>&name=<?php echo $v['name'];?> ">
+                        <img src="<?php echo $v['pic'];?> " alt="">
+                        <div class="mask-top">
+                            <p class="fff"><?php echo $v['name'];?> </p>
+                            <p class="grey">MAINLAND<span>&nbsp;IDOL</span> PORTFOLIO</p>
+                        </div>
+                    </a>
+                </div>
+                <?php endforeach;?>
+
+
+                <div class="content-middle">
+                    <?php foreach($fn1 as $v):?>
+                    <div>
+                        <a href="/index.php/sing/singer?id=<?php echo $v['id'];?>">
+                            <img src="<?php echo $v['pic'];?> " alt="">
+                            <p><?php echo $v['name'];?></p>
+                        </a>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+
+
+
+
+                <div class="content-bottom">
+                    <?php foreach($fn2 as $v):?>
+                    <a href="/index.php/sing/singer?id=<?php echo $v['id'];?>">
+                        <img src="<?php echo $v['pic'];?>" alt="">
+                        <div class="btm-left">
+                            <p><?php echo $v['name'];?></p>
+                            <p><?php echo $v['name2'];?></p>
+                        </div>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

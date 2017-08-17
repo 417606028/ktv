@@ -1,0 +1,105 @@
+$url:"/Public/img/";
+@mixin full{
+  width: 100%;
+  height: 100%;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@mixin bac{
+  background-position: 50% 50%;
+  background-size: cover;
+
+}
+@mixin flex{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flexcenter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin boxSizing{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@mixin  z($size){
+  width: $size;
+  height: $size;
+}
+.wraper{
+  @include full;
+  background-image: url($url + 'songs.png');
+  @include bac;
+  .header-wraper{
+    width: 100%;
+    height: 1.8rem;
+    padding-top: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .header{
+    width: 100%;
+    height: 0.88rem;
+    @include flexcenter;
+  }
+  .header .left{
+    width: 0.59rem;
+    height: 0.59rem;
+    background-image: url($url + 'songslist_back.png');
+    @include bac;
+  }
+  .header .left a{
+    display: block;
+    @include full;
+  }
+  .header .middle{
+    width: 5.2rem;
+    height: 0.88rem;
+    font-size: 0.28rem;
+    line-height: 0.88rem;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 1.76rem;
+    @include boxSizing;
+    font-weight: 600;
+  }
+  .main{
+    width: 100%;
+    height: 10rem;
+    background: #ffffff;
+    box-shadow: 0 5px 5px 5px #F2DAF4;
+    @include flexcenter;
+  }
+  .main .items a{
+    display: block;
+    @include z(3.05rem);
+    @include flexcenter;
+    box-shadow: 0 0 2px 2px #F2DAF4;
+    -webkit-box-shadow:0 0 2px 2px #F2DAF4 ;
+    -moz-box-shadow: 0 0 2px 2px #F2DAF4;
+    align-content: space-around;
+    font-size: 0.24rem;
+    color: #3A3E47;
+    -webkit-transition: all ease 1s 0s  ;
+    -moz-transition: all ease 1s 0s  ;
+    -ms-transition: all ease 1s 0s  ;
+    -o-transition: all ease 1s 0s  ;
+    transition: all ease 1s 0s  ;
+    &:hover{
+      transform: translateY(-0.2rem);
+      box-shadow: 0 5px 10px 8px #F2DAF4;
+    }
+  }
+  .main .items img{
+    display: block;
+    width: 2.02rem;
+    height: 1.71rem;
+  }
+
+}

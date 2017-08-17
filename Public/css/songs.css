@@ -1,0 +1,261 @@
+.wraper{
+    width: 100%;
+    height: 100%;
+    background-image: url("/Public/img/songs.png");
+    background-position: center;
+    background-size: cover;
+}
+.songs-wraper{
+    width: 7.05rem;
+    height: 100%;
+    margin:0 auto;
+    
+}
+.songslist{
+    width: 100%;
+    height: 2.36rem;
+    margin-bottom: 0.2rem;
+}
+.songslist .songsmenu{
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.songsmenu .songsback{
+    display: block;
+    width: 0.49rem;
+    height: 0.49rem;
+    background-image: url("/Public/img/songslist_back.png");
+    background-size: cover;
+    background-position: center;
+}
+.songslist .songsmenu>p{
+    width: 4.8rem;
+    height: 0.88rem;
+    color: #ffffff;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.88rem;
+}
+.songslist .songsmenu .songs-selected{
+    width: 1.08rem;
+    height: 0.48rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+    text-align: center;
+}
+.songslist .songsmenu .songs-selected>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+.songslist .songlist{
+    width: 100%;
+    height: 0.70rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.songslist .songlist .singer{
+    height: 0.70rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.songslist .songlist .musiclogo{
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-right: 0.1rem;
+    background-image: url("/Public/img/songslist_logo.png");
+    background-size: cover;
+    background-position: center;
+}
+.songslist .songlist a{
+    color: #ffffff;
+    font-size: 0.24rem;
+}
+.songslist .songs-soso{
+    width: 100%;
+    height: 0.7rem;
+    position: relative;
+}
+.songs-soso .soso{
+    width: 0.33rem;
+    height: 0.33rem;
+    background-image: url("/Public/img/songslist_search.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:1.6rem;
+    margin:auto;
+}
+#song-search{
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    border-radius: 5px ;
+    box-sizing: border-box;
+    font-size: 0.26rem;
+    color: rgba(37,51,19,0.66);
+}
+.songscontent-wraper{
+    width: 100%;
+    height: auto;
+    margin-top: 0.8rem;
+}
+.songscontent-wraper img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.songscontent-wraper .content-top{
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2px;
+    position: relative;
+}
+.content-top .mask-top{
+    width: 4.8rem;
+    height: 1.4rem;
+    background: rgba(128, 36, 55, 0.27);
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.26rem;
+    font-weight:500;
+}
+.content-top .mask-top .fff{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.content-top .mask-top .grey{
+    color: #F8F4F5;
+    width: 100%;
+    text-align: center;
+}
+.content-top .mask-top .grey>span{
+    color: #FF318D;
+    font-weight: 600;
+    border-top: 2px solid #FF318D;
+    padding-top: 0.1rem;
+}
+.songscontent-wraper .content-middle{
+    width: 100%;
+    height: 2.14rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.songscontent-wraper .content-middle>div:nth-of-type(1){
+    width: 2.76rem;
+    height: 100%;
+    position: relative;
+}
+.songscontent-wraper .content-middle>div:nth-of-type(2){
+    width: 2.04rem;
+    height: 100%;
+    position: relative;
+}
+.songscontent-wraper .content-middle>div:nth-of-type(3){
+    width: 2.04rem;
+    height: 100%;
+    position: relative;
+}
+.songscontent-wraper .content-middle div p{
+    color: #ffffff;
+    line-height: 2.14rem;
+    text-align: center;
+    font-size: 0.26rem;
+    font-weight:500;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.songscontent-wraper .content-bottom{
+    width: 100%;
+    height: 3.31rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.songscontent-wraper .content-bottom>a:nth-of-type(1){
+    display: block;
+    width: 2.88rem;
+    height: 100%;
+    margin-right: 2px;
+    position: relative;
+}
+.songscontent-wraper .content-bottom>a:nth-of-type(2){
+    display: block;
+    width: 4.02rem;
+    height: 100%;
+    position: relative;
+}
+.songscontent-wraper .content-bottom a{
+    color: #ffffff;
+    font-size: 0.26rem;
+    font-weight: 500;
+    text-align: center;
+}
+.songscontent-wraper .content-bottom .btm-left,.btm-right{
+    width: 1.86rem;
+    height: 1.03rem;
+    background:rgba(128, 36, 55, 0.27);
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.songscontent-wraper .content-bottom div p{
+    width: 100%;
+}
+.songscontent-wraper .content-bottom .btm-right .line{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.18rem;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+    top:0;
+    bottom: 0;
+    left:0.1rem;
+    margin: auto;
+}
+.songscontent-wraper .content-bottom .btm-right .liner{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.18rem;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+    top:0;
+    bottom: 0;
+    right:0.1rem;
+    margin: auto;
+}
+
+
+

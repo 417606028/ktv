@@ -1,0 +1,11 @@
+@mixin rem($size:750px){
+  $list:320px,360px,375px,384px,412px,414px,600px,$size;
+  @each $v in $list{
+    @media screen and(min-width:#{$v}) {
+      html{
+        font-size: 100px * ($v / $size);
+      }
+    }
+  }
+}
+@include rem();

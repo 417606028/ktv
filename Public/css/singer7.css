@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background: url("/Public/img/singer71.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app .wrapers {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.24rem;
+  box-sizing: border-box;
+}
+
+.app .wrapers .nav {
+  width: 100%;
+  height: 0.88rem;
+}
+
+.nav {
+  width: 100%;
+  height: 0.88rem;
+}
+
+.nav .nav-wraps {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.nav .nav-wraps li {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+}
+
+.nav .nav-wraps .icon {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("/Public/img/icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+
+.nav .nav-wraps .gs {
+  text-align: center;
+  flex: 1;
+  align-self: center;
+  color: #fff;
+  font-size: .36rem;
+  font-weight: 600;
+}
+
+.nav .nav-wraps .yd {
+  justify-content: flex-end;
+  align-self: center;
+  height: 0.25rem;
+  font-size: .24rem;
+  color: #fff;
+  padding: 0.1rem;
+}
+
+.nav-wraps li:last-child {
+  justify-content: flex-end;
+}
+
+.title {
+  width: 100%;
+  height: 6.75rem;
+  margin-top: .3rem;
+  overflow: hidden;
+}
+
+.title ul {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.title ul li {
+  width: 100%;
+  height: .32rem;
+  font-size: .26rem;
+  color: #fff;
+  text-align: center;
+  line-height: .32rem;
+  letter-spacing: 1px;
+  margin-top: .15rem;
+}
+
+.title ul .hot {
+  color: #FFCC31;
+}
+
+.tagger {
+  height: 4.57rem;
+  margin-top: .8rem;
+}
+
+.tagger .tagger-top {
+  width: 100%;
+  height: 2.15rem;
+  background: #fff;
+}
+
+.tagger .tagger-top ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagger .tagger-top ul li {
+  width: .91rem;
+  height: 1.42rem;
+}
+
+.tagger .tagger-top ul li .imgs {
+  width: 100%;
+  height: .91rem;
+}
+
+.tagger .tagger-top ul li h2 {
+  font-size: .26rem;
+  color: #575861;
+  text-align: center;
+}
+
+.tagger-top ul li:nth-child(1) .imgs {
+  background: url("/Public/img/play_09.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tagger-top ul li:nth-child(2) .imgs {
+  background: url("/Public/img/play_15.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tagger-top ul li:nth-child(3) .imgs {
+  width: 100%;
+  height: 100%;
+  background: url("/Public/img/play_03.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -.2rem;
+}
+
+.tagger-top ul li:nth-child(3) .paused {
+  width: 100%;
+  height: 100%;
+  background: url("/Public/img/play_paused.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -.2rem;
+}
+
+.tagger-top ul li:nth-child(3) {
+  width: 1.14rem;
+  height: 1.14rem;
+}
+
+.tagger-top ul li:nth-child(4) .imgs {
+  background: url("/Public/img/play_06.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tagger-top ul li:nth-child(5) .imgs {
+  background: url("/Public/img/play_12.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jingdu {
+  width: 100%;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.jingdu .shengyin {
+  height: .87rem;
+  padding: 0 0.24rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jingdu .shengyin .btn {
+  width: .4rem;
+  height: 100%;
+  background: url("/Public/img/huatong.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jingdu .shengyin .jd {
+  width: 5.13rem;
+  height: .05rem;
+  background: #e8d9dd;
+  border-radius: 3px;
+  position: relative;
+}
+
+.jingdu .shengyin .jd .jdt {
+  width: 3rem;
+  height: .05rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff318d;
+  border-radius: 3px;
+}
+
+.jingdu .shengyin .jd .dian {
+  position: absolute;
+  top: -.17rem;
+  left: 2.7rem;
+  width: .43rem;
+  height: .43rem;
+  background: url("/Public/img/dian.png");
+  background-size: 100%;
+}
+
+.jingdu .shengyin span {
+  font-size: .3rem;
+  color: #838389;
+}
+
+.jingdu .laba {
+  height: .87rem;
+  padding: 0 0.24rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jingdu .laba .btn {
+  width: .6rem;
+  height: 100%;
+  background: url("/Public/img/laba.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jingdu .laba .jd {
+  width: 5.13rem;
+  height: .05rem;
+  background: #e8d9dd;
+  border-radius: 3px;
+  position: relative;
+}
+
+.jingdu .laba .jd .jdt {
+  width: 3rem;
+  height: .05rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ff318d;
+  border-radius: 3px;
+}
+
+.jingdu .laba .jd .dian {
+  position: absolute;
+  top: -.17rem;
+  left: 2.7rem;
+  width: .43rem;
+  height: .43rem;
+  background: url("/Public/img/dian.png");
+  background-size: 100%;
+}
+
+.jingdu .laba span {
+  font-size: .3rem;
+  color: #838389;
+}
